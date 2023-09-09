@@ -1,0 +1,60 @@
+/*
+ * Colors
+ */
+ $color-primary: #1E2D48;
+ $color-primary--light: #2D436C;
+ $color-primary--ghost: #C9D4E8;
+ 
+ $color-secondary: #CEB37E;
+ 
+ $color-light--light: #FFFFFF;
+ $color-light: #F6F6F6; // (White)
+ $color-light--dark: #EDEDEE;
+ 
+ $color-grey--light: #f7f7f7;
+ $color-grey--light--500: #e7e5e5;
+ $color-grey: #808080;
+
+ $color-dark: #16161d;
+
+ $color-overlay: rgba(#16161d, 0.66);
+ 
+ 
+ /*
+  * Gradients
+  */
+ $gradient_1: linear-gradient(90deg, #cdfafa 0%, #785a28 0.01%, #c89b3c 100%);
+ 
+ /*
+  * Shadows
+  */
+ $shadow-side: 2px 4px 8px rgba($color-dark, 0.1);
+ $shadow-header: 4px 2px 8px rgba($color-dark, 0.1);
+ $shadow: 0px 0px 8px $color-light--dark;
+ $shadow-st: 0px 0px 4px rgba($color-dark, 0.4); // pour démarquer du fond
+ $shadow-st--500: 0px 0px 6px rgba($color-dark, 0.125);
+ 
+ /*
+  * Breakpoints
+  */
+ $sm: 576px;
+ $md: 768px;
+ $lg: 992px;
+ $xl: 1200px;
+ $xxl: 1400px;
+ 
+ /*
+  * Spacers
+  */
+  $spacer-xxs: 0.25rem;    // Extra extra small
+  $spacer-xs: 0.5rem;      // Extra small
+  $spacer-s: 0.75rem;      // s
+  $spacer-sm: 1rem;        // Small
+  $spacer-md: 1.5rem;      // Medium
+  $spacer-lg: 2rem;        // Large
+  $spacer-lgl: 2.5rem;     // Large
+  $spacer-xl: 3rem;        // Extra large
+  $spacer-xxl: 4rem;       // Extra extra large
+
+
+  $transition-md: 0.25s;

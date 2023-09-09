@@ -1,0 +1,14 @@
+
+
+section {
+    display: grid;
+    width: 100%;
+    background: grey;
+    border: 1px solid black;
+
+    &--large {
+        display: flex;
+    }
+}
+
+
