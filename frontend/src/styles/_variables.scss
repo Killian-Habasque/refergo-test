@@ -1,11 +1,11 @@
 /*
  * Colors
  */
- $color-primary: #1E2D48;
+ $color-primary: #CF8454;
  $color-primary--light: #2D436C;
  $color-primary--ghost: #C9D4E8;
  
- $color-secondary: #CEB37E;
+ $color-secondary: #463434;
  
  $color-light--light: #FFFFFF;
  $color-light: #F6F6F6; // (White)
@@ -18,7 +18,6 @@
  $color-dark: #16161d;
 
  $color-overlay: rgba(#16161d, 0.66);
- 
  
  /*
   * Gradients
@@ -58,3 +57,4 @@
 
 
   $transition-md: 0.25s;
+  $radius-md: 1.5rem;

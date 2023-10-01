@@ -1,0 +1,50 @@
+version: "3.9"
+services:
+
+  backend:
+    container_name: refergo-backend # Nom du conteneur backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 1999:80
+    volumes:
+      - ./backend:/var/www/html:cached
+      - /var/www/html/vendor
+    networks:
+      - refergo-network
+
+  db:
+    image: mysql:8.0.34
+    platform: linux/amd64
+    container_name: refergo-mysql
+    environment:
+      - "MYSQL_DATABASE=laravel"
+      - "MYSQL_ROOT_PASSWORD=secret"
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - refergo-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    container_name: refergo-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - 1998:80
+    depends_on:
+      - db
+    environment:
+      - PMA_HOST=db
+      - PMA_USER=root
+      - PMA_PASSWORD=secret
+    networks:
+      - refergo-network
+
+volumes:
+  dbdata:
+  laravelstorage:
+
+networks:
+  refergo-network:

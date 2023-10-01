@@ -1,14 +1,26 @@
 
 
-section {
-    display: grid;
-    width: 100%;
-    background: grey;
-    border: 1px solid black;
+.section {
+    margin-left: auto;
+    margin-right: auto;
 
-    &--large {
-        display: flex;
+    &.full {
+        width: 100%;
     }
+
+    &.lg {
+        max-width: 1400px;
+        width: 85%;
+    }
+    &.md {
+        max-width: 1200px;
+        width: 75%;
+    }
+    &.sm {
+        max-width: 1000px;
+        width: 65%;
+    }
+
 }
 
 

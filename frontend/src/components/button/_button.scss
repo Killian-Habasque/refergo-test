@@ -1,8 +1,38 @@
 .button {
-    border-radius: 4px;
-    cursor: pointer;
-    background: black;
-    color: gray;
-    width: 200px;
-    height: 50px;
+    min-width: 100px;
+    border-radius: $radius-md;
+    @include text-style("cta");
+    padding: $spacer-xs $spacer-sm;
+    transition: all $transition-md;
+
+
+    &.primary {
+        background: $color-primary;
+        color: $color-secondary;
+
+        &:hover {
+            background: $color-secondary;
+            color: $color-light;
+        }
+    }
+
+    &.secondary {
+        background: $color-secondary;
+        color: $color-light;
+
+        &:hover {
+            background: $color-secondary;
+            color: $color-light;
+        }
+    }
+
+    &.light {
+        background: $color-light;
+        color: $color-secondary;
+
+        &:hover {
+            background: $color-primary;
+            color: $color-light;
+        }
+    }
 }
