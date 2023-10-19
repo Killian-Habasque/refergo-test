@@ -16,6 +16,31 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": false
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.simple-text-block",
+        "components.double-block"
+      ]
     }
   }
 }

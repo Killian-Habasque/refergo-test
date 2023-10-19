@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_components_double_blocks",
+  "info": {
+    "displayName": "Double Block",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "richText": {
+      "type": "richtext",
+      "required": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "right-left",
+        "left-right"
+      ],
+      "required": true
+    }
+  }
+}

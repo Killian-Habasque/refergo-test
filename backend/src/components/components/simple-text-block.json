@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_simple_text_blocks",
+  "info": {
+    "displayName": "Simple Text Block",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

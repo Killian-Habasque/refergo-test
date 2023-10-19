@@ -29,6 +29,27 @@
     },
     "features": {
       "type": "text"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.double-block",
+        "components.simple-text-block"
+      ]
     }
   }
 }
