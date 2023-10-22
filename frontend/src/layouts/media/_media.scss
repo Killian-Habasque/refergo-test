@@ -1,0 +1,23 @@
+.media__group {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 400px;
+    border-radius: $radius-md;
+
+    .media {
+        border-radius: $radius-md;
+        margin: 0 $spacer-xxl;
+
+        &.cover {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        &.contain {
+            object-fit: contain;
+        }
+    }
+}

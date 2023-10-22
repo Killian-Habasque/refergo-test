@@ -10,8 +10,8 @@ function App() {
     const { isReady, query: { slug } } = useRouter();
     const [productData, setProductData] = useState(null);
 
-    const { data: product, loading: productLoading } = useApi(`/products?filters[slug][$eq]=${slug}&populate=*`);
-// localhost:1337/api/products?filters[slug][$eq]=test&populate[content][populate]=*
+    const { data: product, loading: productLoading } = useApi(`/products?filters[slug][$eq]=${slug}&populate=deep,3`);
+
     useEffect(() => {
         if (isReady) {
             setProductData(product);

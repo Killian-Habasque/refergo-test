@@ -56,7 +56,7 @@ export default function Home() {
       <br></br>
 
       <br></br>
-      <Section full>
+      <Section size="full">
         <Grid columns="2">
           <Card imageCover data={dataCard} />
           <Card imageCover data={dataCard2} />

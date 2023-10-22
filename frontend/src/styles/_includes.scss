@@ -1,30 +1,40 @@
 @mixin text-style($category) {
+    margin-bottom: $spacer-md;
 
-    @if $category =="title--big" {
-        font-size: 32px;
+    @if $category =="title" {
+        font-size: 65px;
         font-family: "Poppins", sans-serif;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 600;
         line-height: 1.25em;
-        letter-spacing: 0.5px;
+        letter-spacing: 0;
     }
 
     @else if $category =="subtitle" {
-        font-size: 20px;
+        font-size: 45px;
         font-family: "Poppins", sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.25em;
-        letter-spacing: 0.5px;
+        letter-spacing: 0;
     }
 
     @else if $category =="subtitle--little" {
-        font-size: 18px;
+        font-size: 30px;
         font-family: "Poppins", sans-serif;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 600;
         line-height: 1.25em;
-        letter-spacing: 0.5px;
+        letter-spacing: 0;
+    }
+
+    @else if $category =="subtitle--little-light" {
+        font-size: 22px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.25em;
+        letter-spacing: 0;
     }
 
     @else if $category =="text" {
@@ -32,7 +42,7 @@
         font-family: "Poppins", sans-serif;
         font-style: normal;
         font-weight: 300;
-        line-height: 1.25em;
+        line-height: 1.5em;
     }
 
     @else if $category =="text--little" {
@@ -77,6 +87,45 @@
     }
 }
 
+
+@mixin button-style($type) {
+    min-width: 100px;
+    border-radius: $radius-md;
+    @include text-style("cta");
+    padding: $spacer-xs $spacer-sm;
+    transition: all $transition-md;
+
+    @if $type =="primary" {
+        background: $color-primary;
+        color: $color-secondary;
+
+        &:hover {
+            background: $color-secondary;
+            color: $color-light;
+        }
+    }
+
+    @else if $type =="secondary" {
+        background: $color-secondary;
+        color: $color-light;
+
+        &:hover {
+            background: $color-secondary;
+            color: $color-light;
+        }
+    }
+
+    @else if $type =="light" {
+        background: $color-light;
+        color: $color-secondary;
+
+        &:hover {
+            background: $color-primary;
+            color: $color-light;
+        }
+    }
+
+}
 
 
 @for $n from 2 through 12 {

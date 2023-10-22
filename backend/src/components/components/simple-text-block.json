@@ -1,14 +1,36 @@
 {
   "collectionName": "components_components_simple_text_blocks",
   "info": {
-    "displayName": "Simple Text Block",
-    "icon": "file"
+    "displayName": "Simple Text block",
+    "icon": "file",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "richText": {
       "type": "richtext",
       "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "large",
+        "medium",
+        "small"
+      ],
+      "default": "large",
+      "required": true
+    },
+    "textAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "required": true,
+      "default": "left"
     }
   }
 }

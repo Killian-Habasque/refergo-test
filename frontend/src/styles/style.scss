@@ -7,3 +7,12 @@
 @import '../layouts/section/section';
 @import '../layouts/grid/grid';
 @import '../components/card/card';
+
+@import '../layouts/media/media';
+@import '../layouts/richText/richText';
+
+
+main {
+    display: grid;
+    grid-gap: $spacer-xxl;
+}

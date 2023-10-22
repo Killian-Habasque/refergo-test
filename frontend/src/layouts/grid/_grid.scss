@@ -1,5 +1,3 @@
-
-
 // .grid {
 //     grid-template-columns: repeat(3, minmax(0px, 1fr));
 // }
@@ -7,5 +5,11 @@
 
 .grid {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: $spacer-s;
+    align-items: center;
+    
+    &.reverse {
+        grid-auto-flow: dense;
+        direction: rtl;
+    }
 }

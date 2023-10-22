@@ -730,7 +730,11 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     subtitle: Attribute.Text;
     thumbnail: Attribute.Media & Attribute.Required;
     content: Attribute.DynamicZone<
-      ['components.simple-text-block', 'components.double-block']
+      [
+        'components.simple-text-block',
+        'components.simple-media-block',
+        'components.double-text-media-block'
+      ]
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -772,9 +776,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     features: Attribute.Text;
     gallery: Attribute.Media;
     slug: Attribute.String & Attribute.Required & Attribute.Unique;
-    content: Attribute.DynamicZone<
-      ['components.double-block', 'components.simple-text-block']
-    >;
+    content: Attribute.DynamicZone<['components.simple-text-block']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

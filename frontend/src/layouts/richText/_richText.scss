@@ -1,0 +1,49 @@
+h1 {
+    @include text-style('title');
+    color: $color-secondary;
+
+}
+
+h2 {
+    @include text-style('subtitle');
+    color: $color-primary;
+}
+
+h3,
+h4 {
+    @include text-style('subtitle--little');
+    color: $color-secondary;
+}
+
+p {
+    @include text-style('text');
+
+    &.subtitle {
+        @include text-style('subtitle--little-light');
+    }
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+
+.text__group {
+    margin: 0 $spacer-xxl;
+
+    &.left {
+        text-align: left;
+    }
+
+    &.right {
+        text-align: right;
+    }
+
+    &.center {
+        text-align: center;
+    }
+
+    a {
+        @include button-style('primary');
+    }
+}

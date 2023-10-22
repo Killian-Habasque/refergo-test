@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_components_double_text_media_blocks",
+  "info": {
+    "displayName": "Double Text Media block",
+    "icon": "server",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "richtext",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "media-text",
+        "text-media"
+      ],
+      "default": "text-media"
+    },
+    "mediaFit": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "contain"
+      ],
+      "default": "cover"
+    },
+    "textFit": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    }
+  }
+}

@@ -39,7 +39,8 @@
       "type": "dynamiczone",
       "components": [
         "components.simple-text-block",
-        "components.double-block"
+        "components.simple-media-block",
+        "components.double-text-media-block"
       ]
     }
   }
